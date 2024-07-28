@@ -3,30 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>s7&s8</title>
 </head>
 <body>
-    <h1>subjects of s7 and s8</h1>
+    <h1 id="top">subjects of s7 and s8</h1>
     <h2>subjects of s7</h2>
-    <h2>subjects of s8</h2>
+    <!-- <h2>subjects of s8</h2> -->
     <ul>
-        <li>ai</li>
-        <li>ise</li>
-        <li>compiler lab</li>
-        <li>web programing</li>
+        <a href="#ai"><li>ai</li></a>
+        <a href="#ise"><li>ise</li></a>
+        <a href="#cl"><li>compiler lab</li></a>
+        <a href="#web"><li>web programing</li></a>
     </ul>
     <h2>subjects of s8</h2>
     <ul>
-        <li>ai</li>
-        <li>ise</li>
-        <li>program elective</li>
-        <li>oppen elective</li>
-        <li>compiler lab</li>
-        <li>project</li>
-        <li>seminar</li>
+        <a href="#dc"><li>distributed computing</li></a>
+        <a href="dm">data mining</a>
     </ul>
     <h2>syllabus</h2>
-    <h3>artificial intelligence</h3>
+    <h3 id="ai">artificial intelligence</h3>
     <h4>Module – 1 (Introduction)</h4>
     <p>Introduction – What is Artificial Intelligence(AI) ? The Foundations of AI, History of AI,
         Applications of AI. Intelligent Agents – Agents and Environments, Good behavior: The concept
@@ -53,8 +48,8 @@
         Evaluating and choosing the best hypothesis, Regression and classification with Linear
         models.
     </p>
-
-    <h3>Industrial Safety Engineering</h3>
+    <a href="#top"><p>back to top</p></a>
+    <h3 id="ise">Industrial Safety Engineering</h3>
     <h4>Module I (Safety introduction)</h4>
     <p> Need for safety. Safety and productivity. Definitions: Accident, Injury, Unsafe act, Unsafe
         Condition, Dangerous Occurrence, Reportable accidents. Theories of accident causation. Safety
@@ -95,8 +90,8 @@
         Control of Chemical Hazards, Hazardous properties of chemicals, Material Safety Data Sheets
         (MSDS)
     </p>
-
-    <h3>Compiler Lab</h3>
+    <a href="#top"><p>back to top</p></a>
+    <h3 id="cl">Compiler Lab</h3>
     <ol>
         <li>Implementation of lexical analyzer using the tool LEX.</li>
         <li>Implementation of Syntax analyzer using the tool YACC.</li>
@@ -108,8 +103,8 @@
         <li>Implement the back end of the compiler.</li>
         
     </ol>
-    
-    <h3>web programming</h3>
+    <a href="#top"><p>back to top</p></a>
+    <h3 id="web">web programming</h3>
     <h4>Module – 1 (WWW, HTML)</h4>
     <p>Introduction to the Internet & WWW: Evolution of Internet & World Wide Web- Web Basics,
         URI’s & URL-MIME.
@@ -144,6 +139,63 @@
         Development Environment-Application structure of Laravel-Routing -Middleware-Controllers-
         Route Model Binding-Views-Redirections-Request and Responses.
     </p>
+    <a href="#top"><p>back to top</p></a>
+    
+
+    <h3 id="dc">distributed computing</h3>
+    <h4>Module – 1 (Distributed systems basics and Computation model) </h4>
+    <p>Distributed System – Definition, Relation to computer system components, Motivation, Primitives  for distributed communication, Design issues, Challenges and applications. A model of distributed  computations – Distributed program, Model of distributed executions, Models of communication  networks, Global state of a distributed system, Cuts of a distributed computation, Past and future  cones of an event, Models of process communications. 
+    </p>
+    <h4>Module – 2 (Election algorithm, Global state and Termination detection) 
+    </h4>
+    <p>Logical time – A framework for a system of logical clocks, Scalar time, Vector time. Leader election  algorithm – Bully algorithm, Ring algorithm. Global state and snapshot recording algorithms –  System model and definitions, Snapshot algorithm for FIFO channels – Chandy Lamport algorithm.  Termination detection – System model of a distributed computation, Termination detection using  distributed snapshots, Termination detection by weight throwing,Spanning-tree-based algorithm. 
+    </p>
+    <h4>Module – 3 (Mutual exclusion and Deadlock detection) 
+    </h4>
+    <p>Distributed mutual exclusion algorithms – System model, Requirements of mutual exclusion  algorithm. Lamport’s algorithm, Ricart–Agrawala algorithm, Quorum-based mutual exclusion  algorithms – Maekawa’s algorithm. Token-based algorithm – Suzuki–Kasami’s broadcast algorithm. Deadlock detection in distributed systems – System model, Deadlock handling strategies, Issues in  deadlock detection, Models of deadlocks.
+
+    </p>
+    <h4>Module – 4 (Distributed shared memory and Failure recovery) 
+</h4>
+    <p>Distributed shared memory – Abstraction and advantages. Shared memory mutual exclusion –  Lamport’s bakery algorithm. Check pointing and rollback recovery – System model, consistent and  inconsistent states, different types of messages, Issues in failure recovery, checkpoint based  recovery, log based roll back recovery.  
+    </p>
+    <h4>Module – 5 (Consensus and Distributed file system) 
+    </h4>
+    <p>Consensus and agreement algorithms – Assumptions, The Byzantine agreement and other problems,  Agreement in (message-passing) synchronous systems with failures – Consensus algorithm for crash  
+    </p>
+    <a href="#top"><p>back to top</p></a>
+
+
+    <h3>data mining</h3>
+    <h4>Module – 1 (Introduction to Data Mining and Data Warehousing)  
+    </h4>
+    <p>Data warehouse-Differences between Operational Database Systems and Data Warehouses,  Multidimensional data model- Warehouse schema, OLAP Operations, Data Warehouse  Architecture, Data Warehousing to Data Mining, Data Mining Concepts and Applications, Knowledge Discovery in Database Vs Data mining, Architecture of typical data mining system,  Data Mining Functionalities, Data Mining Issues.  
+
+    </p>
+    <h4>Module - 2 (Data Preprocessing)</h4>
+    <p>Data Preprocessing-Need of data preprocessing, Data Cleaning- Missing values, Noisy data, Data  Integration and Transformation, Data Reduction-Data cube aggregation, Attribute subset selection,  Dimensionality reduction, Numerosity reduction, Discretization and concept hierarchy generation.  
+
+
+    </p>
+    <h4>Module - 3 (Advanced classification and Cluster analysis)  
+    </h4>
+    <p>Classification- Introduction, Decision tree construction principle, Splitting indices -Information  Gain, Gini indexDecision tree construction algorithms-ID3, Decision tree construction with  presorting-SLIQ, Classification Accuracy-Precision, Recall. 
+        Introduction to clustering-Clustering Paradigms, Partitioning Algorithm- PAM, Hierarchical  Clustering-DBSCAN, Categorical Clustering-ROCK 
+        
+
+    </p>
+    <h4>Module 4: (Association Rule Analysis)</h4>
+    <p>Association Rules-Introduction, Methods to discover Association rules, Apriori(Level-wise  algorithm), Partition Algorithm, Pincer Search Algorithm, Dynamic Itemset Counting Algorithm,  FP-tree Growth Algorithm.  
+
+
+    </p>
+    <h4>Module 5 (Advanced Data Mining Techniques)</h4>
+    <p>Web Mining - Web Content Mining, Web Structure Mining- Page Rank, Clever, Web Usage  Mining- Preprocessing, Data structures, Pattern Discovery, Pattern Analysis. Text Mining-Text  Data Analysis and information Retrieval, Basic measures for Text retrieval, Text Retrieval  methods, Text Indexing Techniques, Query Processing Techniques. 
+
+
+    </p>
+    <a href="#top"><p>back to top</p></a>
+
     
 </body>
 </html>
