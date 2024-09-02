@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gross Pay Calculator</title>
+    <script>
+        function calculateGP() {
+            let employees = [];
+
+            for (let i = 0; i < 3; i++) {
+                let name = prompt("Enter the name of employee " + (i + 1) );
+                let hoursWorked = parseFloat(prompt("number of hours worked of employee " + (i + 1) ));
+                let hourlyRate = parseFloat(prompt("hourly rate of employee " + (i + 1)));
+
+
+
+                let grossPay;
+                if (hoursWorked > 40) {
+                    grossPay = (40 * hourlyRate) + ((hoursWorked - 40) * hourlyRate * 1.5);
+                } else {
+                    grossPay = hoursWorked * hourlyRate;
+                }
+
+                employees.push({ name, grossPay });
+            }
+
+            let result = "<h1>Employee Gross Pay</h1>";
+            employees.forEach(employee => {
+                result += `<p>Gross pay of ${employee.name} is ${employee.grossPay.toFixed(2)}</p>`;
+            });
+
+            document.body.innerHTML += result;
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="calculateGP()">Calculate Gross Pay</button>
+</body>
+
+</html>
