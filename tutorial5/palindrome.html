@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var f,fact=1,n,i;
+        do {
+            number = prompt("Enter 5 digit num:");
+            if (number.length !== 5 || isNaN(number)) {
+                alert("The number is not 5 digit");
+                continue;
+            }
+            let reverse = number.split('').reverse().join('');
+            isPali = (number === reverse);
+            if (isPali) {
+                alert(number + " is palindrome");
+            } else {
+                alert(number + " is not palindrome");
+            }
+        } while (number.length !== 5 || isNaN(number));
+        
+        
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
