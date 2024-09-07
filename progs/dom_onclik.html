@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body onload="test">
+    <script>
+        function test(){
+            document.getElementById("h1").style.color="red";
+        }
+    </script>
+
+    <h1 id="h1" onclick="this.innerHTML='oops!!'" >page</h1><br>
+    <a href="changevalue.html" onmouseover="window.alert('u clk me');" onmouseout="alert('gud');">clikk</a>
+    <form action="" name="f1">
+        enter name: <input type="text" name="fn">
+        <input type="button" value="go" onclick="alert('hello'+document.f1.fn.value);">
+        enter nbr: <input type="number" name="ff">
+        <input type="submit" value="submit" onclick="alert('u sumited');">
+    </form>
 </body>
 </html>
