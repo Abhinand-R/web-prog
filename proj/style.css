@@ -1,0 +1,17 @@
+.bg-black{
+    padding: 4%;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.bg-black-a{
+    text-decoration: none;
+}
+
+.footer{
+    position: relative;
+}
+
+*{
+    margin: 0px;
+}
